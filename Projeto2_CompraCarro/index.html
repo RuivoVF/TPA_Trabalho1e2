@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamento do carro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body style="background: url(Imagem-topo.png);">
+<div class="mt-5 d-flex justify-content-center">
+    <div class="pt-4 pb-4 d-flex flex-column bd-highlight" style="background-color: darkgray; width: 380px; border-radius: 10px;">
+        <header class="text-center">
+            <h1>Parcelamento do carro</h1>
+        </header>
+        <div class="px-4 bd-highlight">
+            <div class="input-group mb-3">
+                <input class="form-control" type="number" id="rmensal" placeholder="Renda mensal">
+            </div>
+        </div>
+        <div class="px-4 bd-highlight">
+            <div class="input-group mb-3">
+                <input class="form-control"  type="number" id="vprod" placeholder="Valor do bem a ser financiado">
+            </div>
+        </div>
+        <div class="px-4 bd-highlight">
+            <div class="input-group mb-3">
+                <input class="form-control"  type="number" id="ventrada" placeholder="Valor da entrada">
+            </div>
+        </div>
+        <div class="px-4 bd-highlight">
+            <div class="input-group mb-3">
+                <input class="form-control"  type="number" id="txjuros" placeholder="Taxa de juros">
+            </div>
+        </div>
+        <div class="px-4 bd-highlight">
+            <div class="input-group">
+                <input class="form-control"  type="number" id="nprestacoes" placeholder="Número de prestações">
+            </div>
+        </div>
+
+        <input type="button" value="calcular" class="button mx-4 my-3 btn btn-outline-dark" onclick="cal()">
+        <footer class="d-flex justify-content-md-center">
+            <p>&copy; Vítor Fonseca de Aquino Silva</p>
+        </footer>
+    </div>
+</div>
+<div class="mt-5 d-flex justify-content-center teste ">
+    <div id="teste" style="background-color: darkgray; width: 380px; border-radius: 10px;">
+    </div>
+</div>
+<script src="JavaScript.js"></script>
+</body>
+</html>
